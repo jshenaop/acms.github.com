@@ -9,22 +9,35 @@ Cada subcarpeta es un ACM autocontenido (HTML + imagen Open Graph). GitHub Pages
 
 ---
 
-## 📊 Propiedades publicadas
+## 📊 Última versión por propiedad y tipo
 
-| Estado | Propiedad | Tipo | Comparables | Fecha publicación | Enlace |
-|---|---|---|---|---|---|
-| 🟢 **Última** | Balcones de Emaús (Los Rosales / Chapinero) | Comprador | 34 | 2026-04-24 09:04 | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-comprador-240903/) |
-| publicada | Balcones de Emaús (Chapinero) | Comprador | 18 | 2026-04-23 20:50 | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-comprador-232049/) |
-| publicada | El Peñón — Casa 127 (Girardot) | Venta | — | 2026-04-05 22:31 | [Ver →](https://dot.lacasamia.co/penon-casa-127-052230/) |
-| publicada | Casa 198 Las Margaritas (Cn. El Peñón, Girardot) | Venta | 56 | 2026-04-05 22:31 | [Ver →](https://dot.lacasamia.co/penon-las-margaritas-052230/) |
-| publicada | El Peñón — Casa 127 (Girardot) | Venta | — | 2026-04-05 22:21 | [Ver →](https://dot.lacasamia.co/penol-casa-127-052219/) |
-| publicada | Casa 198 Las Margaritas 500m² (Cn. El Peñón, Girardot) | Venta | 56 | 2026-04-05 22:21 | [Ver →](https://dot.lacasamia.co/penon-las-margaritas-052219/) |
-| publicada | Balcones de Emaús (Chapinero) | Venta | 18 (dentro de 1km) | 2026-04-04 00:01 | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-040001/) |
-| publicada | Casa 198 Las Margaritas 500m² (Cn. El Peñón, Girardot) | Venta | 56 | 2026-04-03 23:53 | [Ver →](https://dot.lacasamia.co/penol-las-margaritas-500m2-032353/) |
-| publicada | Casa 198 Las Margaritas (Cn. El Peñón, Girardot) | Venta | 56 | 2026-04-03 23:38 | [Ver →](https://dot.lacasamia.co/penol-las-margaritas-032338/) |
-| publicada | Balcones de Emaús (Chapinero) | Venta | 39 | 2026-04-03 22:53 | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-032253/) |
+Esta tabla muestra **el ACM más reciente para cada combinación (propiedad, tipo)**. Es la versión vigente — la que debe usarse en conversaciones activas con clientes. Las versiones anteriores quedan en el [Historial de revisiones](#-historial-de-revisiones) abajo.
 
-> El orden es **del más reciente al más antiguo**. La fila marcada 🟢 **Última** es la versión más actualizada y la que debería usarse para conversaciones activas con clientes.
+| Propiedad | Tipo | Comparables | Fecha publicación | Enlace |
+|---|---|---|---|---|
+| Balcones de Emaús (Los Rosales / Chapinero) | 🛒 Comprador | 34 | 2026-04-24 09:04 | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-comprador-240903/) |
+| Balcones de Emaús (Chapinero) | 🏷️ Venta | 18 | 2026-04-04 00:01 | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-040001/) |
+| El Peñón — Casa 127 (Girardot) | 🏷️ Venta | — | 2026-04-05 22:31 | [Ver →](https://dot.lacasamia.co/penon-casa-127-052230/) |
+| Casa 198 Las Margaritas — 328 m² (Cn. El Peñón, Girardot) | 🏷️ Venta | 56 | 2026-04-05 22:31 | [Ver →](https://dot.lacasamia.co/penon-las-margaritas-052230/) |
+| Casa 198 Las Margaritas — 500 m² (Cn. El Peñón, Girardot) | 🏷️ Venta | 56 | 2026-04-05 22:21 | [Ver →](https://dot.lacasamia.co/penon-las-margaritas-052219/) |
+
+> ⚠️ Para encontrar el ACM más actualizado de una propiedad, esta tabla es la fuente de verdad. Si hay una versión más nueva, debería aparecer aquí (no en el historial).
+
+---
+
+## 🕓 Historial de revisiones
+
+Versiones anteriores. **No usar para conversaciones activas** — son referencia histórica.
+
+| Propiedad | Tipo | Fecha | Notas | Enlace |
+|---|---|---|---|---|
+| Balcones de Emaús | 🛒 Comprador | 2026-04-23 20:50 | 18 comparables (versión previa a la actualización a 34) | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-comprador-232049/) |
+| Balcones de Emaús | 🏷️ Venta | 2026-04-03 22:53 | 39 comparables (antes del filtrado a 18 dentro de 1km) | [Ver →](https://dot.lacasamia.co/balcones-de-emaus-032253/) |
+| El Peñón — Casa 127 | 🏷️ Venta | 2026-04-05 22:21 | Slug con ortografía pre-corrección (`penol-` → `penon-`) | [Ver →](https://dot.lacasamia.co/penol-casa-127-052219/) |
+| Casa 198 Las Margaritas — 328 m² | 🏷️ Venta | 2026-04-03 23:38 | Slug pre-corrección (`penol-`) | [Ver →](https://dot.lacasamia.co/penol-las-margaritas-032338/) |
+| Casa 198 Las Margaritas — 500 m² | 🏷️ Venta | 2026-04-03 23:53 | Slug pre-corrección (`penol-`) | [Ver →](https://dot.lacasamia.co/penol-las-margaritas-500m2-032353/) |
+
+**Cómo se actualiza esta tabla**: cuando publicás una nueva versión de un ACM, mové la entrada anterior de "Última versión" al "Historial de revisiones" con una nota corta indicando qué cambió (más comparables, corrección de ortografía, datos actualizados, etc.).
 
 ---
 
