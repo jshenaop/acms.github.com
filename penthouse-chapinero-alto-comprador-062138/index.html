@@ -28,7 +28,7 @@
 
     <!-- Open Graph para WhatsApp — reemplazar con datos dinámicos via generar-config-v4 -->
     <meta property="og:title" content="Análisis Comparativo de Mercado | Penthouse Chapinero Alto | VENTA | LaCasaMía">
-    <meta property="og:description" content="330 m² + 100 m² terraza · 4 hab · Chapinero Alto · ACM $3.26B · 26 comparables">
+    <meta property="og:description" content="330 m² + 100 m² terraza · 4 hab · Chapinero Alto · ACM $3.28B · 26 comparables">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
     <meta property="og:image" content="https://dot.lacasamia.co/penthouse-chapinero-alto-comprador-062138/og-image.jpg">
@@ -2050,17 +2050,11 @@
             ],
 
             recomendacion: {
-                precioRecomendado: 3256000000,
-                precioMinimo: 3006000000,
-                precioMaximo: 3256000000,
-                analisis: "Penthouse dúplex en el último piso, con vista panorámica a los cerros y terraza de 100 m², en Chapinero Alto (barrio Bellavista Norte). El valor justo por un modelo de DOS PARTES POR ZONA sobre 26 comparables de la zona (apartamentos 200-460 m², depurados por duplicados y regla intercuartílica) es ~$3,256,286,211 COP: base $7,913,669/m² (mediana de la COHORTE SIN AMENIDADES del sector — este edificio clásico no tiene gimnasio ni zonas sociales, así que se compara con sus iguales) más un índice de exclusividad +8.3% por ser penthouse en el último piso, neto del ajuste por dúplex (la terraza se valora aparte como área efectiva). ESTRATEGIA PRICED TO SELL: se recomienda SALIR en $3,256,000,000 COP — el valor justo de mercado, publicado sin sobreprecio para atraer ofertas y vender en menor tiempo —, con un CIERRE OBJETIVO de $3,130,000,000 COP y un PISO de negociación (mínimo) de $3,006,000,000 COP (la mediana de la cohorte sin amenidades). Los totales sobre un área efectiva de 380 m² (330 m² privados + 100 m² de terraza valorada al 50%): salida $8,568,421/m², objetivo $8,236,842/m², piso $7,910,526/m².",
-                estrategias: [
-                    "Destacar la ubicacion en Chapinero Alto contra los cerros orientales",
-                    "Priced to sell: salir en $3,256,000,000 (valor justo de mercado), cierre objetivo $3,130,000,000, piso de negociacion $3,006,000,000",
-                    "Destacar exclusividad: penthouse duplex, ultimo piso, vista panoramica y terraza",
-                    "Publicar con fotografias profesionales en todos los portales",
-                    "Evaluar ajuste de precio tras 30-45 dias sin ofertas concretas",
-                ],
+                precioRecomendado: 3410000000,
+                precioMinimo: 3007000000,
+                precioMaximo: 3410000000,
+                analisis: "Penthouse dúplex en el último piso, con vista panorámica a los cerros y terraza de 100 m², en Chapinero Alto (barrio Bellavista Norte). El valor justo por un modelo de DOS PARTES POR ZONA sobre 26 comparables de la zona (apartamentos 200-460 m², depurados por duplicados y regla intercuartílica) es ~$3,281,018,807 COP: base $7,913,669/m² (mediana de la COHORTE SIN AMENIDADES del sector — este edificio clásico no tiene gimnasio ni zonas sociales, así que se compara con sus iguales) más un índice de exclusividad +9.1% por ser penthouse en el último piso, neto del ajuste por dúplex (la terraza se valora aparte como área efectiva). Este valor justo corresponde a un área efectiva de 380 m² (330 m² privados + 100 m² de terraza valorada al 50%), respaldado por los comparables del sector.",
+                estrategias: [],
             },
         };
         // ================================================================
@@ -2112,7 +2106,7 @@
                 var nT12 = CONFIG.comparables.filter(function (c) { return c.tipo === "Altamente Comparable"; }).length;
                 var nT3 = CONFIG.comparables.filter(function (c) { return c.tipo === "Comparable"; }).length;
                 var avgM2 = nT12 > 0 ? Math.round(CONFIG.comparables.filter(function (c) { return c.tipo === "Altamente Comparable" && c.precioM2; }).reduce(function (s, c) { return s + c.precioM2; }, 0) / nT12) : 0;
-                mst.innerHTML = nT12 + ' comparables directos y ' + nT3 + ' de zona cercana · Promedio $/m²: $' + avgM2.toLocaleString('es-CO') + ' COP · Precio recomendado: $' + rec.precioRecomendado.toLocaleString('es-CO') + ' COP';
+                mst.innerHTML = nT12 + ' comparables directos y ' + nT3 + ' de zona cercana · Promedio $/m²: $' + avgM2.toLocaleString('es-CO') + ' COP';
             }
             // Old description (hidden, for print)
             var oldDesc = document.getElementById('descriptionText');
@@ -2700,7 +2694,6 @@
             var barrio = CONFIG.highlights && CONFIG.highlights[1] ? CONFIG.highlights[1].texto.replace('Barrio: ', '') : p.direccion;
             const shareText = '🏠 Hola, revisé el análisis comparativo de:\n\n' +
                 '📍 ' + p.nombre + ' — ' + barrio + '\n' +
-                '💰 Precio sugerido: $' + rec.precioRecomendado.toLocaleString('es-CO') + ' COP\n' +
                 '📊 Basado en ' + nComparables + ' comparables del sector\n\n' +
                 'Me gustaría recibir más información sobre esta propiedad. ¿Está disponible?';
             const btn = document.getElementById('shareButton');
@@ -2887,8 +2880,8 @@
             // CAPA 2: Marcadores de comparables (SIEMPRE al frente)
             var propiedadesLayer = L.featureGroup();
             var estilosProp = {
-                'Altamente Comparable': { color: '#0B2986', fillColor: '#FFA522', radius: 8, fillOpacity: 0.9 },
-                'Comparable': { color: '#0B2986', fillColor: '#7EC8E3', radius: 6, fillOpacity: 0.9 },
+                'Comparable': { color: '#0B2986', fillColor: '#FFA522', radius: 8, fillOpacity: 0.9 },
+                'Cercana': { color: '#0B2986', fillColor: '#7EC8E3', radius: 6, fillOpacity: 0.9 },
                 'Descartada': { color: '#666666', fillColor: '#cccccc', radius: 4, fillOpacity: 0.6 }
             };
             CONFIG.comparables.forEach(function (c) {

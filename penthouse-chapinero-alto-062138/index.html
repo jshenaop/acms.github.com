@@ -28,7 +28,7 @@
 
     <!-- Open Graph para WhatsApp — reemplazar con datos dinámicos via generar-config-v4 -->
     <meta property="og:title" content="Análisis Comparativo de Mercado | Penthouse Chapinero Alto | VENTA | LaCasaMía">
-    <meta property="og:description" content="330 m² + 100 m² terraza · 4 hab · Chapinero Alto · ACM $3.26B · 26 comparables">
+    <meta property="og:description" content="330 m² + 100 m² terraza · 4 hab · Chapinero Alto · ACM $3.28B · 26 comparables">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
     <meta property="og:image" content="https://dot.lacasamia.co/penthouse-chapinero-alto-062138/og-image.jpg">
@@ -2058,13 +2058,13 @@
             ],
 
             recomendacion: {
-                precioRecomendado: 3256000000,
-                precioMinimo: 3006000000,
-                precioMaximo: 3256000000,
-                analisis: "Penthouse dúplex en el último piso, con vista panorámica a los cerros y terraza de 100 m², en Chapinero Alto (barrio Bellavista Norte). El valor justo por un modelo de DOS PARTES POR ZONA sobre 26 comparables de la zona (apartamentos 200-460 m², depurados por duplicados y regla intercuartílica) es ~$3,256,286,211 COP: base $7,913,669/m² (mediana de la COHORTE SIN AMENIDADES del sector — este edificio clásico no tiene gimnasio ni zonas sociales, así que se compara con sus iguales) más un índice de exclusividad +8.3% por ser penthouse en el último piso, neto del ajuste por dúplex (la terraza se valora aparte como área efectiva). ESTRATEGIA PRICED TO SELL: se recomienda SALIR en $3,256,000,000 COP — el valor justo de mercado, publicado sin sobreprecio para atraer ofertas y vender en menor tiempo —, con un CIERRE OBJETIVO de $3,130,000,000 COP y un PISO de negociación (mínimo) de $3,006,000,000 COP (la mediana de la cohorte sin amenidades). Los totales sobre un área efectiva de 380 m² (330 m² privados + 100 m² de terraza valorada al 50%): salida $8,568,421/m², objetivo $8,236,842/m², piso $7,910,526/m².",
+                precioRecomendado: 3410000000,
+                precioMinimo: 3007000000,
+                precioMaximo: 3410000000,
+                analisis: "Penthouse dúplex en el último piso, con vista panorámica a los cerros y terraza de 100 m², en Chapinero Alto (barrio Bellavista Norte). El valor justo por un modelo de DOS PARTES POR ZONA sobre 26 comparables de la zona (apartamentos 200-460 m², depurados por duplicados y regla intercuartílica) es ~$3,281,018,807 COP: base $7,913,669/m² (mediana de la COHORTE SIN AMENIDADES del sector — este edificio clásico no tiene gimnasio ni zonas sociales, así que se compara con sus iguales) más un índice de exclusividad +9.1% por ser penthouse en el último piso, neto del ajuste por dúplex (la terraza se valora aparte como área efectiva). ESTRATEGIA DE PRECIO EN 3 NIVELES (por percentil de la cohorte sin amenidades): el valor justo del modelo queda entre el cierre objetivo y la salida. Se recomienda SALIR en $3,410,000,000 COP —percentil 65 del sector, ~+4% sobre el valor justo, para dejar margen a la negociación propia de este segmento de alto valor—, con un CIERRE OBJETIVO de $3,178,000,000 COP (percentil 58, un escalón por debajo del valor justo) y un PISO de negociación (mínimo) de $3,007,000,000 COP (percentil 50 = la mediana de la cohorte = la Base del modelo). Los totales sobre un área efectiva de 380 m² (330 m² privados + 100 m² de terraza valorada al 50%): salida $8,973,684/m², objetivo $8,363,158/m², piso $7,913,158/m².",
                 estrategias: [
                     "Destacar la ubicacion en Chapinero Alto contra los cerros orientales",
-                    "Priced to sell: salir en $3,256,000,000 (valor justo de mercado), cierre objetivo $3,130,000,000, piso de negociacion $3,006,000,000",
+                    "Estrategia en 3 niveles: salida $3,410,000,000 (P65, con margen de negociacion), cierre objetivo $3,178,000,000 (P58), piso $3,007,000,000 (P50, mediana de la cohorte sin amenidades)",
                     "Destacar exclusividad: penthouse duplex, ultimo piso, vista panoramica y terraza",
                     "Publicar con fotografias profesionales en todos los portales",
                     "Evaluar ajuste de precio tras 30-45 dias sin ofertas concretas",
@@ -2144,8 +2144,8 @@
             const p = CONFIG.propiedad;
             const comparable = data.filter(d => d.tipo === "Comparable");
             const cercanas = data.filter(d => d.tipo === "Cercana");
-            const avgComparable = 8236842;            // Precio Objetivo (cierre) $/m2
-            const avgCercanas = 7910526;  // Piso de negociación (mediana zona) $/m2
+            const avgComparable = 8363158;            // Precio Objetivo (cierre) $/m2
+            const avgCercanas = 7913158;  // Piso de negociación (mediana zona) $/m2
             const recPrecioM2 = rec.precioRecomendado / 380;  // Salida/m2 (area efectiva incl. terraza 50%)
             const maxPrice = Math.max(avgComparable, avgCercanas, recPrecioM2);
             const diffComparable = ((avgComparable - recPrecioM2) / recPrecioM2 * 100).toFixed(1);
